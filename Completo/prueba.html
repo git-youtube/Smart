@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body onload="maturityGraphAll()">
+  <canvas id="myChart"></canvas>
+
+  <script>
+
+async function maturityGraphAll() {
+  const hash = 'Sevilla';
+
+  // Realizar una solicitud GET a la API
+  await fetch('http://127.0.0.1:8000/api/mediasCiudades/', {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+    .then(response => response.json()) // Convertir la respuesta a formato JSON
+    .then(response => {
+      // Obtener los datos de las ciudades
+      const citiesData = response;
+      
+      // Verificar si la ciudad actual coincide con el hash
+      const currentCity = citiesData[hash] ? hash : Object.keys(citiesData)[0];
+
+      // Obtener los valores de los datos de las ciudades
+      const currentCityData = Object.values(citiesData[currentCity]);
+      const otherCities = Object.keys(citiesData).filter(city => city !== currentCity);
+      const otherCitiesData = otherCities.map(city => Object.values(citiesData[city]));
+
+      // Actualizar los datos y etiquetas de los datasets
+      myChart.data.datasets[0].data = currentCityData;
+      myChart.data.datasets[0].label = currentCity;
+      myChart.data.datasets[1].data = otherCitiesData[0];
+      myChart.data.datasets[1].label = otherCities[0];
+      
+      myChart.update();
+    })
+    .catch(error => console.log(error)); // Capturar y mostrar errores en la consola
+}
+
+
+
+
+
+
+    // Definición de las utilidades y funciones auxiliares
+    const Utils = {
+      // Array de variables personalizadas
+      variables: ['L', 'P', 'I', 'C', 'U', 'E'],
+
+      // Genera un array de números aleatorios dentro de un rango dado
+      numbers: function (count) {
+        const min = -100;
+        const max = 100;
+        const numbers = [];
+        for (let i = 0; i < count; i++) {
+          const number = Math.floor(Math.random() * (max - min + 1)) + min;
+          numbers.push(number);
+        }
+        return numbers;
+      },
+      CHART_COLORS: {
+        red: '#FF0000',
+        blue: '#0000FF'
+        // Define otros colores de gráfico aquí si es necesario
+      },
+      transparentize: function (color, opacity) {
+        // Implementa la lógica para hacer un color transparente según la opacidad proporcionada
+        // ...
+      },
+      randomColor: function () {
+        // Genera un color aleatorio en formato hexadecimal
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      },
+      rand: function (min, max) {
+        // Implementa la lógica para generar un número aleatorio entre min y max
+        // ...
+      }
+    };
+
+    // Configuración de datos para el gráfico
+    const data = {
+      // Etiquetas personalizadas
+      labels: Utils.variables,
+      datasets: [
+        {
+          label: 'Dataset 1',
+          data: Utils.numbers(6), // Genera 6 números aleatorios
+          backgroundColor: Utils.CHART_COLORS.red,
+          borderColor: Utils.CHART_COLORS.red,
+          borderWidth: 1,
+          order: 1
+        },
+        {
+          label: 'Dataset 2',
+          data: Utils.numbers(6), // Genera 6 números aleatorios
+          backgroundColor: Utils.CHART_COLORS.blue,
+          borderColor: Utils.CHART_COLORS.blue,
+          borderWidth: 1,
+          type: 'line',
+          order: 0
+        },
+      ]
+    };
+
+    // Configuración del gráfico
+    const config = {
+      type: 'bar',
+      data: data,
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'top',
+          },
+          title: {
+            display: true,
+            text: 'Nombre Ciudad'
+          }
+        }
+      },
+    };
+
+    // Acciones disponibles para el gráfico
+    const actions = [
+
+    ];
+
+    // Obtén una referencia al elemento canvas
+    const canvas = document.getElementById('myChart');
+
+    // Crea el gráfico utilizando la biblioteca Chart.js
+    const ctx = canvas.getContext('2d');
+    const myChart = new Chart(ctx, config);
+
+    // Agrega interacciones o acciones al gráfico como botones
+    actions.forEach(action => {
+      const button = document.createElement('button');
+      button.innerText = action.name;
+      button.addEventListener('click', () => action.handler(myChart));
+      document.body.appendChild(button);
+    });
+
+  </script>
+</body>
+
+</html>

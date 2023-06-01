@@ -1,0 +1,1421 @@
+/* ----------------------------  INSERTS DATA ---------------------------- */
+
+/* Dimensiones ----------------------------------- */
+INSERT INTO Subdimensiones (Subdimension, Dimension) VALUES('L1','L');
+INSERT INTO Subdimensiones (Subdimension, Dimension) VALUES('L2','L');
+INSERT INTO Subdimensiones (Subdimension, Dimension) VALUES('L3','L');
+INSERT INTO Subdimensiones (Subdimension, Dimension) VALUES('L4','L');
+
+INSERT INTO Subdimensiones (Subdimension, Dimension) VALUES('I1','I');
+INSERT INTO Subdimensiones (Subdimension, Dimension) VALUES('I2','I');
+
+INSERT INTO Subdimensiones (Subdimension, Dimension) VALUES('P1','P');
+INSERT INTO Subdimensiones (Subdimension, Dimension) VALUES('P2','P');
+
+INSERT INTO Subdimensiones (Subdimension, Dimension) VALUES('U1','U');
+
+INSERT INTO Subdimensiones (Subdimension, Dimension) VALUES('E1','U');
+
+INSERT INTO Subdimensiones (Subdimension, Dimension) VALUES('C1','C');
+INSERT INTO Subdimensiones (Subdimension, Dimension) VALUES('C2','C');
+
+
+
+/* L1 -------------------------------------------- */
+/* Tabla Preguntas */
+INSERT INTO Preguntas (PreguntaId, Pregunta, Subdimension, tipoPregunta, maxPregunta) VALUES('l1q1', 'What type of structure has the city got to govern resilience?', 'L1','radio',4);
+INSERT INTO Preguntas (PreguntaId, Pregunta, Subdimension, tipoPregunta, maxPregunta) VALUES('l1q2','Is the resilience action plan well integrated with other plans/strategies at different governance levels?','L1','radio',5);
+INSERT INTO Preguntas (PreguntaId, Pregunta, Subdimension, tipoPregunta, maxPregunta) VALUES('l1q3','Does the city promote the access to basic services to vulnerable groups?','L1','radio',3);
+INSERT INTO Preguntas (PreguntaId, Pregunta, Subdimension, tipoPregunta, maxPregunta) VALUES('l1q4','Does the city support other cities in the development of resilience plans aligned with corresponding guidelines?','L1','radio',4);
+
+/* Tabla Elementos */
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There is not any organizational structure','l1q1','radio', 1);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There is an informal organizational structure (a working group) in charge of resilience issues','l1q1','radio', 2);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There is a formal organizational structure (department or committee)','l1q1','radio', 3);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There is a permanent organizational structure that coordinates at municipal, regional and national level','l1q1','radio', 4);
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No, completely separated','l1q2','radio', 1);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Integrated with city plans.','l1q2','radio', 2);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Integrated with regional plans','l1q2','radio', 3);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Integrated with national plans','l1q2','radio', 4);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Integrated with internation al plans','l1q2','radio', 5);
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','l1q3','radio', 1);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Partially','l1q3','radio', 2);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Totally','l1q3','radio', 3);
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','l1q4','radio', 1);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('At a regional level only.','l1q4','radio', 2);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('At regional and national levels.','l1q4','radio', 3);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('At regional, national and international levels.','l1q4','radio', 4);
+
+/* L2 -------------------------------------------- */
+/* Tabla Preguntas */
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Have the resilience processes/procedures adopted any standards?','l2q1','L2','radio',5);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Are the resilience process submitted to any certification bodies to ensure conformity?','l2q2','L2','radio',5);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Is the resilience approach integrated with existing risk reduction and prevention policies by establishing new strategies, legislation and conduct codes?','l2q3','L2','radio',4);
+
+
+/* Tabla Elementos */
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('None. Mostly intuitive','l2q1','radio',1);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Aligned with regional policies','l2q1','radio',2);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Aligned with National standards','l2q1','radio',3);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Aligned with International standards','l2q1','radio',4);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Contribute to development of standards','l2q1','radio',5);
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('None official','l2q2','radio',1);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Comparison with Regional processes','l2q2','radio',2);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Certified Nationally','l2q2','radio',3);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Certified Internationally','l2q2','radio',4);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Taken as a certification Baseline','l2q2','radio',5);
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Just list them','l2q3','radio',1);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, in part','l2q3','radio',2);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, the majority','l2q3','radio',3);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, all','l2q3','radio',4);
+
+
+/* L3 -------------------------------------------- */
+/* Tabla Preguntas */
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('To what extent is the resilience culture developed in the city?','l3q1','L3','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('To what extent are past events analysed to extract lessons learned?','l3q2','L3','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('How is the process of knowledge transfer?','l3q3','L3','radio',5);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('How is the learning process?','l3q4','L3','radio',5);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Are there formal procedures to assess the effectiveness of the learning process?','l3q5','L3','radio',3);
+/* Tabla Elementos */
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The resilience is not developed','l3q1','radio', 1);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The city has developed a strategy to develop a resilience culture','l3q1','radio', 2);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The strategy to develop a resilience culture is being implemented','l3q1','radio', 3);
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The past events are not analysed','l3q2','radio', 1);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The past events are partially analysed','l3q2','radio', 2);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Lessons learned are included in the plans','l3q2','radio', 3);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Plans are reviewed continuously to include lessons learned','l3q2','radio', 4);
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There is no knowledge transfer with other cities','l3q3','radio', 1);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Knowledge is transferred with close cities','l3q3','radio', 2);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Knowledge is transferred to cities in the same region','l3q3','radio', 3);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Knowledge is transferred at the national level','l3q3','radio', 4);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Knowledge is transferred at the international level','l3q3','radio', 5);
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There is not any learning process','l3q4','radio', 1);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The learning process is informal','l3q4','radio', 2);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The learning process is formalised','l3q4','radio', 3);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The learning process is systematic','l3q4','radio', 4);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The learning process is systematic and supported by an active network of stakeholders','l3q4','radio', 5);
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are no procedures','l3q5','radio', 1);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are some procedures to assess','l3q5','radio', 2);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are formal procedures to assess','l3q5','radio', 3);
+
+
+/* L4 -------------------------------------------- */
+/* Tabla Preguntas */
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Which is the level of development of the disaster response plan?','l4q1','L4','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('In which phase is the development of the RAP?','l4q2','L4','radio',5);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Which group of stakeholders collaborate in the RAP development?','l4q3','L4','radio',5);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('What types of events are addressed in the RAP?','l4q4','L4','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Does the Plan address Climate Change aspects?','l4q5','L4','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Is the resilience perspective adopted and integrated into the city? well integrated with other key city functions?','l4q6','L4','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Does the city collaborate with other cities and external bodies? If yes, mark all those that apply','l4q7','L4','radio',5);
+
+/* Tabla Elementos */
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Not developed','l4q1','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Partially developed but still non-operational','l4q1','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Completely developed and is operational','l4q1','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The development of the RAP has not been started','l4q2','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('All Requirements have been identified, and an initial RAP has been developed','l4q2','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The RAP has been completely developed and is operational','l4q2','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('RAP is developed and periodically monitored and assessed through indicators','l4q2','radio',4 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('RAP is continuously improved','l4q2','radio',5 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Emergency Services (ES) only','l4q3','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Emergency Services plus NGOs, Public and Private companies','l4q3','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Level 2 plus Volunteer Organizations and/or citizens','l4q3','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Level 3 plus Academic and scientific organisations','l4q3','radio',4 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Level 4 plus Legislative Bodies','l4q3','radio',5 );
+
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Shocks','l4q4','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Shocks and chronic stresses','l4q4','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Shocks and chronic stresses, and unpredictable situations','l4q4','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('None','l4q5','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Partially. Some Climate Risk Information is incorporated in some phases','l4q5','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Totally. All Climate Risk Information is incorporate in all phases','l4q5','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','l4q6','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The requirements to adopt a resilience perspective are identified','l4q6','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Partially integrated with many city key functions','l4q6','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Fully integrated with all city key functions','l4q6','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','l4q7','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, with other cities at the regional level','l4q7','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, with other cities at regional and national levels','l4q7','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, with other cities at regional and national levels and external bodies','l4q7','radio',4 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, all the previous and with other cities at the international level','l4q7','radio',5 );
+
+
+/*Tabla PreguntasTabla*/
+INSERT INTO PreguntasTabla(IdPregunta,ElementoPregunta,Valor) VALUES('l4q1','Not included',1 );
+INSERT INTO PreguntasTabla(IdPregunta,ElementoPregunta,Valor) VALUES('l4q1','Partially developed-Non-operational',2 );
+INSERT INTO PreguntasTabla(IdPregunta,ElementoPregunta,Valor) VALUES('l4q1','Completely developed but not monitored',3 );
+INSERT INTO PreguntasTabla(IdPregunta,ElementoPregunta,Valor) VALUES('l4q1','Developed and monitored',4 );
+INSERT INTO PreguntasTabla(IdPregunta,ElementoPregunta,Valor) VALUES('l4q1','Monitored and updated with new data and strategies',5 );
+
+
+/* I1 -------------------------------------------- */
+/* Tabla Preguntas */
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('How do you identify and prioritise infrastructures that are critical for your city?','i1q1','I1','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Is there a strategy to protect the city´s critical infrastructures, utilities and services?','i1q2','I1','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Are there cooperation and collaboration agreements among the city and CI providers?','i1q3','I1','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Do all CI have a business contingency plan?','i1q4','I1','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('How do you identify and assess the interdependencies among CIs?','i1q5','I1','radio',5);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('How do CIs identify and monitor risks?','i1q6','I1','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Do private and public sectors have a continuity plan for adverse events?','i1q7','I1','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Are the CIs monitored and maintained properly?','i1q8','I1','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Is the city implementing measures to increase critical infrastructure redundancy?','i1q9','I1','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('How do you conduct the audits for Cis?','i1q10','I1','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Is there a continuous improvement strategy to analyze shocks and stresses and improve resilience building policies?','i1q11','I1','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Are appropriate regulations, codes and standards defined for CIs?','i1q12','I1','radio',4);
+
+/* Tabla Elementos */
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('I do not identify the CIs','i1q1','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('I have a high-level view of what infrastructures are critical.','i1q1','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('I have a list of infrastructures that are critical for the city','i1q1','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('I have a list of CIs and their prioritisation based on their critical level','i1q1','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There is not any strategy','i1q2','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Risks on CI have been identified but there is not any strategy','i1q2','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There is a strategy to identify risk and stresses but it does not include a business continuity plan for essential services.  ','i1q2','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, there is a city´s CI strategy that includes a continuity plan for essential services ','i1q2','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are not cooperation and collaboration agreements','i1q3','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are cooperation and collaboration agreements among the city and few CI providers','i1q3','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are cooperation and collaboration agreements among the city and most of the CI providers','i1q3','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are cooperation and collaboration agreements among the city and all CI providers','i1q3','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('None of them','i1q4','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Few of them','i1q4','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Majority of them','i1q4','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('All CI have a business contingency plan','i1q4','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The interdependencies among CIs are not defined','i1q5','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There is a partial identification of the interdependencies','i1q5','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The interdependencies among CIs are identified but not assessed','i1q5','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The interdependencies among CIs are identified and assessed','i1q5','radio',4 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The identification and assessment of interdependencies among CIs and services is also carried out at international level ','i1q5','radio',5 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Risks that can affect CIs are not identified neither monitored','i1q6','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Risks that can affect CIs are identified but not monitored','i1q6','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Risks that can affect CIs are identified and monitored through the implementation of monitoring systems','i1q6','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('None of them','i1q7','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Few of them','i1q7','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Majority of them','i1q7','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('All of them','i1q7','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The CIs do not develop any monitoring and preventive maintenance activities to their equipment','i1q8','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Some CIs have some monitoring systems in place and conduct preventive maintenance activities time to time','i1q8','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('CIs have continuous monitoring system and preventive maintenance activities in place','i1q8','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('CIs implement AI technology to continuously analyze the information and improve based on past shocks and events ','i1q8','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','i1q9','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('They only implement the mandatory reliable and safety measures','i1q9','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Cis implement measures to increase the redundancy, safety and reliability level of their equipment','i1q9','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('CIs use updated risk information to develop flexible and adaptive measures to manage unexpected events','i1q9','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are not audits conducted in CIs','i1q10','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are audits conducted in some CIs but not in all of them','i1q10','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Audits are conducted in all Cis regularly','i1q10','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','i1q11','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The policies are evaluated to assess their effectiveness but are not updated','i1q11','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Policies are evaluated and improved','i1q11','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('AI methods are used to evaluate policies and maintain a continuous improvement of the resilience policies','i1q11','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are not regulations, standards or codes for building CIs resilience','i1q12','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are some recommended standards and codes that CIs might use as a guidance to improve their resilience','i1q12','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are appropriate regulations, codes and standards for CIs to improve resilience however many Cis do not fulfil them.','i1q12','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are appropriate regulations, codes and standards for CIs to improve resilience and all the CIs fulfil them','i1q12','radio',4 );
+
+
+/* I2 -------------------------------------------- */
+/* Tabla Preguntas */
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Does the city identify and assess the current initiatives and funding opportunities for resilience development?','i2q1','I2','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('How does the local governmental budget support the resilience actions?','i2q2','I2','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('How the resources are controlled and coordinated during shocks and stresses?','i2q3','I2','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('How the sharing of resources among CI providers are dealt with during crises?','i2q4','I2','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Does the city has contingency funds for extraordinary emergency situations?','i2q5','I2','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Are there incentives offered to stakeholders for Sustainable urban infrastructures','i2q6','I2','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Are there incentives offered to stakeholders for Business to adapt to changing circumstances','i2q7','I2','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Are there incentives offered to stakeholders for Incentives for investments in R&D&I Projects','i2q8','I2','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('How innovation is taken into consideration in the Resilience Building process','i2q9','I2','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('How the availability of physical resources is assessed?','i2q10','I2','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('What are the finance mechanisms offered by the city to build up resilience by organizations','i2q11','I2','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('How the insurance of assets is treated in the city','i2q12','I2','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Is there a funding mechanism of emergencies and post disaster recovery actions?','i2q13','I2','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('How the insurance level of stakeholders are monitored?','i2q14','I2','radio',3);
+
+
+/* Tabla Elementos */
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','i2q1','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Partially','i2q1','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes','i2q1','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There is not any local budget assigned to the resilience actions','i2q2','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There is a part of local budget assigned to the resilience actions but it is not enough to cover all of them','i2q2','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The local budget support all the resilience actions','i2q2','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Controlled by the user','i2q3','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Controlled by the user in a distributed and independent way','i2q3','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Controlled by a Central Coordination','i2q3','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The use of resources is centrally coordinated and monitored to ensure resilience','i2q3','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No sharing','i2q4','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Promoted at the regional level for some CI','i2q4','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Promoted at the regional level for all shared CI','i2q4','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No contingency funds allocated','i2q5','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, but it is limited and covers 25% of the estimated impacts','i2q5','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, but it covers 50% of the estimated impacts','i2q5','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, it covers 100% of the estimated impacts','i2q5','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','i2q6','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Some incentive','i2q6','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Total incentive, including monetary incentives','i2q6','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','i2q7','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Some incentive','i2q7','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Total incentive, including monetary incentives','i2q7','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','i2q8','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Some incentive','i2q8','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Total incentive, including monetary incentives','i2q8','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No consideration at all','i2q9','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Partial consideration. Desirable but not required','i2q9','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Full consideration. It is required as part of the process','i2q9','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('It is a permanent indicator which incentive is always required','i2q9','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No assessment','i2q10','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Periodically assessed, say once a year','i2q10','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Constantly assessed','i2q10','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('None','i2q11','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Some','i2q11','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('All initiatives','i2q11','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('None','i2q12','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Meaning some insurance is done','i2q12','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('“Encouragement” uptake of appropriate insurance products','i2q12','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('None','i2q13','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Few insurance companies and private sectors are integrated in the funding mechanisms of emergencies and post-disaster recovery actions','i2q13','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Most of insurance companies and private sectors are integrated in the funding mechanisms of emergencies and post-disaster recovery actions','i2q13','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Not monitored','i2q14','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Partially Monitored','i2q14','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Fully monitored','i2q14','radio',3 );
+
+
+
+/* U1 -------------------------------------------- */
+/* Tabla Preguntas */
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Are the adaptation measures identified and evaluated?','u1q1','U1','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Does your city implement climate change adaptation measures?','u1q2','U1','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Which is the level of integration between climate change adaptation and mitigation strategies?','u1q3','U1','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Does your city evaluate the plans and programs for climate change resilience?','u1q4','U1','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Is there any evaluation of NBS (Nature-Based Solution)s that can benefit urban resilience?','u1q5','U1','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Does your city implement Nature-Based solutions (NBS)?','u1q6','U1','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('What type of climate information is used to support informed decision-making? Mark all that apply','u1q7','U1','checkbox',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Are there appropriate regulations and standards for urban planning?','u1q8','U1','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Are there guidelines for sustainable and resilient urban planning?','u1q9','U1','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Measures to enhance the social dimension','u1q10','U1','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Measures to enhance the economic dimension','u1q11','U1','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Measures to enhance the environmental dimension','u1q12','U1','radio',3);
+
+/* Tabla Elementos */
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','u1q1','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('They are recognised but not evaluated','u1q1','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('They are recognised and evaluated','u1q1','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No, the city does not implement adaptation measures','u1q2','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, the city implements climate change adaptation measures','u1q2','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, the city implements climate change adaptation measures and is aligned with risk reduction measures','u1q2','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No integration','u1q3','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Partially integrated','u1q3','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Completely integrated. The development and design of adaptation strategies are done considering mitigation targets','u1q3','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The plans and programs aren’t evaluated','u1q4','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The plans and programs are partially evaluated','u1q4','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The plans and programs are evaluated considering the climate change standpoint','u1q4','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There is no evaluation','u1q5','radio',1  );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The NBSs are partially evaluated','u1q5','radio',2  );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Full and periodic evaluation','u1q5','radio',3  );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No, the city is not aware of the concept','u1q6','radio',1  );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Partially, some NBS are implemented in the city but are not a focal point of urban planning','u1q6','radio',2  );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The implementation of NBS is an essential point of urban planning','u1q6','radio',3  );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The NBSs are fully integrated into the city policies to improve urban resilience','u1q6','radio',4  );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No climate data is used','u1q7','checkbox',1);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Past data - Historical information about climate','u1q7','checkbox',2);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Present climate data - Observations, monitoring, reports or studies to describe climate variability','u1q7','checkbox',3);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Future climate data such as forecasts and projections','u1q7','checkbox',4);
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are no regulations or standards for urban planning','u1q8','radio',1);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are some recommended standards for urban planning; however, they are hardly used','u1q8','radio',2);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are proper regulations and standards for urban planning, and it is mandatory to fulfil them','u1q8','radio',3);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are constantly updated regulations and standards for urban planning, and it is mandatory to fulfil them','u1q8','radio',4);
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','u1q9','radio',1  );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are documents that collect information on sustainable design principles for sustainable urban planning and best practices and provide recommendations','u1q9','radio',2  );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are complete guidelines on how to develop sustainable urban planning','u1q9','radio',3  );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Not implemented','u1q10','radio',1);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Some measures implemented','u1q10','radio',2);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('A full range of measures implemented','u1q10','radio',3);
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Not implemented','u1q11','radio',1);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Some measures implemented','u1q11','radio',2);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('A full range of measures implemented','u1q11','radio',3);
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Not implemented','u1q12','radio',1);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Some measures implemented','u1q12','radio',2);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('A full range of measures implemented','u1q12','radio',3);
+
+/*Tabla PreguntasTabla*/
+INSERT INTO PreguntasTabla(IdPregunta,ElementoPregunta,Valor) VALUES('u1q5','Not implemented',1);
+INSERT INTO PreguntasTabla(IdPregunta,ElementoPregunta,Valor) VALUES('u1q5','Some measures implemented',2);
+INSERT INTO PreguntasTabla(IdPregunta,ElementoPregunta,Valor) VALUES('u1q5','A full range of measures implemented',3);
+
+
+
+/* E1 -------------------------------------------- */
+/* Tabla Preguntas */
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Is there an ecosystem services assessment that can quantify the capacity to deliver ecosystem services over time? How broad is the assessment?','e1q1','E1','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Does the city provide information about the role of ecosystems in disaster resilience?','e1q2','E1','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Are there agreements and collaborations with border cities to develop and promote joint actions on transboundary ecosystems? Implementation of carbon sinks','e1q3','E1','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Does the city enhance or protect important ecosystems through environmental management techniques, restoration projects or protection measures?','e1q4','E1','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Does the city protect or enhance ecosystems (and their associated ecosystem services)?','e1q5','E1','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Are there any mitigation targets for GHG reduction?','e1q6','E1','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Has the city developed and/or implemented the legal context to favour implementing climate change actions?','e1q7','E1','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Has the city developed and/or implemented financial and technical resources to favour implementing climate change actions?','e1q8','E1','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Awareness campaigns to reduce energy consumption','e1q9','E1','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Promotion of renewable energies','e1q10','E1','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Promotion of sustainable transport (i.e. electric cars, public transport, bikes…)','e1q11','E1','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Promotion of climate change awareness campaigns','e1q12','E1','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('How often are the performance and effectiveness of adaptation and mitigation measures monitored and analysed? Promotion of sustainable transport (i.e. electric cars, public transport, bikes…)','e1q13','E1','radio',3);
+
+/* Tabla Elementos */
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No, but the important ecosystems are identified','e1q1','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('YES, but it is very superficial and eventual','e1q1','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('YES, it covers most of ecosystem services, but it is still eventual ','e1q1','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('YES, it covers all ecosystem services but it is sporadically done','e1q1','radio',4 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('YES, it covers all ecosystem services and it is frequently done (at least once a year)','e1q1','radio',5 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No, the city does not provide any information','e1q2','radio',1);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, but the information is limited','e1q2','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, the city provides complete information','e1q2','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Not implemented','e1q3','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Partially implemented','e1q3','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Fully Implemented','e1q3','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No or very rarely','e1q4','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Occasionally, the city conducts some ecosystem management, restoration or protection measures','e1q4','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Frequently, the city conducts environmental management measures to enhance ecosystems','e1q4','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The city frequently conducts environmental management measures and is involved in large ecosystem protection or restoration projects','e1q4','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','e1q5','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, but at the city’s urban boundary only','e1q5','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, it also includes the peri-urban areas','e1q5','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, and it also includes joint action with bordering cities','e1q5','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','e1q6','radio',1);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, but general','e1q6','radio',2);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, very specific','e1q6','radio',3);
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No, neither developed nor implemented','e1q7','radio',1);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Partially Implemented','e1q7','radio',2);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Fully Implemented','e1q7','radio',3);
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','e1q8','radio',1);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Partially Implemented','e1q8','radio',2);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Fully Implemented','e1q8','radio',3);
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Not implemented','e1q9','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Partially implemented','e1q9','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Fully Implemented','e1q9','radio',3 );  
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Not implemented','e1q10','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Partially implemented','e1q10','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Fully Implemented','e1q10','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Not implemented','e1q11','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Partially implemented','e1q11','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Fully Implemented','e1q11','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Not implemented','e1q12','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Partially implemented','e1q12','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Fully Implemented','e1q12','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Not implemented','e1q13','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Partially implemented','e1q13','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Fully Implemented','e1q13','radio',3 );
+
+/*Tabla PreguntasTabla*/
+INSERT INTO PreguntasTabla(IdPregunta,ElementoPregunta,Valor) VALUES('e1q7','Not implemented',1);
+INSERT INTO PreguntasTabla(IdPregunta,ElementoPregunta,Valor) VALUES('e1q7','Partially implemented',2);
+INSERT INTO PreguntasTabla(IdPregunta,ElementoPregunta,Valor) VALUES('e1q7','Implemented',3);
+
+
+/* P1 -------------------------------------------- */
+/* Tabla Preguntas */
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('What type of risks have been identified?','p1q1','P1','radio',5);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('How risks are assessed?','p1q2','P1','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('How are the effects of the risks analyzed?','p1q3','P1','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('How impact are assessed?','p1q4','P1','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('What mechanisms are in place to detect and alert of potential hazards?','p1q5','P1','radio',5);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('What is the involvement of the stakeholders in assessing the risks and impact?','p1q6','P1','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('How is the collaboration of the CITY with other CITIES?','p1q7','P1','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('How vulnerable people are identified and care for?','p1q8','P1','radio',4);
+
+/* Tabla Elementos */
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Just the most common risks','p1q1','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Risks derived from shocks','p1q1','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Chronic risks','p1q1','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Long-term risks and their evolution','p1q1','radio',4 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('All and continuously updating ','p1q1','radio',5 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Basic assessment following shocks','p1q2','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Assessing anticipated scenarios of risks','p1q2','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Post-event assessment','p1q2','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Undertake regular and continuously updating risks assessment','p1q2','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Just the primary effects','p1q3','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Cascading effects (primary and secondary effects)','p1q3','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Analysis of interdependencies','p1q3','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Using risk systemicity tools to identify all the effects and also external risks','p1q3','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Just after a crisis occurrence considering the direct impact','p1q4','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Post-crisis event considering direct and indirect impact','p1q4','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Forecasting and anticipating the potential impact of risks','p1q4','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Scenario based assessment of impact','p1q4','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are early warning systems to monitor potential hazard','p1q5','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are early warning systems to automatically detect potential hazard','p1q5','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are early warning systems to monitor and forecast potential hazard in advance','p1q5','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are alert systems to communicate with stakeholders about the potential hazard','p1q5','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Local government and representatives','p1q6','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('LG and emergency representatives','p1q6','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('LG + Emer. Repre + CIs repres + NGOs + Regional government','p1q6','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('LG + Emer. Repre + CIs repres + NGOs + Regional government + private companies + citizens','p1q6','radio',4 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('LG + Emer. Repre + CIs repres + NGOs + Regional government + private companies + citizens + European level organizations and legislative bodies','p1q6','radio',5 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There is some information  sharing with some cities about how to manage risks.','p1q7','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are some time to time collaboration with some cities to help them in managing and assessing their risks','p1q7','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are regular collaborations with other cities to support them in managing and assessing their risks','p1q7','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The city is a benchmark in risk management and it is dedicated to support and lecture other cities.','p1q7','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No special treatment','p1q8','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Inventory of the most vulnerable only','p1q8','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Inventory of all vulnerable people','p1q8','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Inventory of all vulnerable people and continuously updated','p1q8','radio',4 );
+
+
+/* P2 -------------------------------------------- */
+/* Tabla Preguntas */
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Do CI providers and emergency teams participate in regular training exercise to be prepared in a crisis/emergency?','p2q1','P2','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Do volunteers participate in regular training exercise to be prepared in a crisis/emergency? ','p2q2','P2','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Do members of the society (citizens and Companies) participate in regular training exercise to be prepared in a crisis/emergency?','p2q3','P2','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('At which scale are the regional training exercises carried out?','p2q4','P2','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('At which scale are the national training exercises carried out? ','p2q5','P2','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Are there any coordinated training exercises involving other European cities? ','p2q6','P2','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('The city organizes and cooperates with other cities to develop training plans','p2q7','P2','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Are the training programs and exercises updated and improved','p2q8','P2','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Which is the level of development of the volunteering initiatives?','p2q9','P2','radio',5);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Are there any initiatives to promote common understanding of the resilience approach among the members of society?','p2q10','P2','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Are there awareness and education campaigns oriented to vulnerable groups?','p2q11','P2','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Who have access to awareness and education campaigns?','p2q12','P2','radio',3);
+
+
+/* Tabla Elementos */
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are no training exercises','p2q1','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are some exercises but they are not regular (e.g. once a year)','p2q1','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are regular training exercises, but not all teams participate','p2q1','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Regular and all members participate.','p2q1','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','p2q2','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, Partially','p2q2','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, all volunteers','p2q2','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','p2q3','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, Partially','p2q3','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, all members of the society','p2q3','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are no regional training exercises','p2q4','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are partial regional training exercises','p2q4','radio',2);
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The training exercises involve all cities in the region','p2q4','radio',3);
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are no national training exercises','p2q5','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are partial national training exercises','p2q5','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There is a coordinated exercise at a national level','p2q5','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are no training exercises with other European cities','p2q6','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are some training exercises at the European level','p2q6','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There is a coordinated exercise at an European level ','p2q6','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','p2q7','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES(' It has done some','p2q7','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('It is always doing','p2q7','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','p2q8','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Some training programs and activities have been assessed','p2q8','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The effectiveness of all training programmes and activities are evaluated but not all of them are updated and improved','p2q8','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, training programmes are assessed and improved','p2q8','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The information about the different volunteering activities exists but the information is not easily accessible','p2q9','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The information about the different volunteering activities exists and it is easily accessible to citizens','p2q9','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The information is available and the volunteering groups have started to develop networks','p2q9','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The Information is available and there are established and well-organised networks of volunteers','p2q9','radio',4 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Volunteering groups and initiatives are self-organised, and involved all the stakeholders','p2q9','radio',5 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','p2q10','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are some isolated initiatives','p2q10','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are frequent initiatives involving the society','p2q10','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','p2q11','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Campaigns cover a small portion of this public','p2q11','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Campaigns cover all or a major portion of this public','p2q11','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('None or a small portion of the general public','p2q12','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Awareness campaigns and education programs are open for the general public','p2q12','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Awareness campaigns and education programs are open for the general public and for private and public companies','p2q12','radio',3 );
+
+
+/* C1 -------------------------------------------- */
+/* Tabla Preguntas */
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Does the city map the stakeholders to facilitate collective engagement and awareness?','c1q1','C1','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Does the city identify the roles and responsibilities of each stakeholder?','c1q2','C1','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Which is the level of development of the city’s stakeholder engagement plan?','c1q3','C1','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Do all stakeholders have a shared understanding of what resilience is?','c1q4','C1','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Which is the level of self-organisation of the cooperation among the city’s stakeholders for developing resilience?','c1q5','C1','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Are there any communication platforms that support communication between governmental groups and citizens?','c1q6','C1','radio',5);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Are academics and scientists involved in the resilience-building process?','c1q7','C1','checkbox',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('How is the stakeholder involved in the learning process?','c1q8','C1','radio',3);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('How does the city involve and engage vulnerable groups in the resilience-building process?','c1q9','C1','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Are the community stakeholders involved in any disaster management activity?','c1q10','C1','radio',4);
+
+/* Tabla Elementos */
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','c1q1','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The city has a list of the main stakeholders involved','c1q1','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The city has a complete list of all the stakeholders involved but without the relationships','c1q1','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The city has a complete list of stakeholders involved and their mapping','c1q1','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','c1q2','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The roles and responsibilities of the main stakeholders are defined but not of all of them','c1q2','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The roles and responsibilities of all the stakeholders are clearly defined','c1q2','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('It does not exist','c1q3','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The city has carried out activities to engage with stakeholders in building resilience activities, but it has not developed a mature engagement plan','c1q3','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There is a well-developed plan to engage city stakeholders in resilience-building activities','c1q3','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','c1q4','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Partially, there are groups of people that have a common understanding of resilience','c1q4','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Partially, the major part of citizens has a common understanding of resilience','c1q4','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, all stakeholders have a common understanding of resilience','c1q4','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Only governmental organisations are involved in developing city resilience','c1q5','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Some community organisations are trained and cooperate during emergencies','c1q5','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There are collaboration networks involved in city resilience development','c1q5','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('City stakeholders are self-organised and strongly involved in developing the city’s resilience','c1q5','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No, there are no platforms to facilitate communication or sharing of information, but there is a public website with emergency information','c1q6','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No, but there are internal communication platforms for sharing information with municipal departments and emergency services','c1q6','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, there are public web platforms to provide information to citizens, but there is no feedback','c1q6','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, some platforms facilitate two-way communication between citizens, government and/or emergency services','c1q6','radio',4 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, there are public platforms designed to enhance the learning process of citizens on resilience that facilitate and encourage sharing and interaction between stakeholders','c1q6','radio',5 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','c1q7','checkbox',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Scientists and academics participate eventually','c1q7','checkbox',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There is a continuous collaboration with academics and scientists','c1q7','checkbox',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('There is no involvement from external stakeholders','c1q8','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The external stakeholders are only involved in the debriefing meetings','c1q8','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('All the stakeholders are involved in the learning process','c1q8','radio',3 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The city does not identify the list of vulnerable groups in the city','c1q9','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The city has a list of vulnerable groups in the city','c1q9','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The city invites vulnerable groups to take part in risk mitigation strategies','c1q9','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The vulnerable groups take part in the development of risk mitigation strategies','c1q9','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No, community organisations are not involved in any activity','c1q10','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Only specific community organisations participate in the planning and response activities','c1q10','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, community organisations are integrated with pre-event planning and post-event response by establishing networks','c1q10','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Yes, community organisations have cohesive social structures to provide support to individual households and local communities','c1q10','radio',4 );
+
+/* C2 -------------------------------------------- */
+
+
+/* Tabla Preguntas */
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Which is the level of involvement that your city has in resilience regional networks or initiatives?','c2q1','C2','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Which is the level of involvement that your city has in resilience national networks or initiatives?','c2q2','C2','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Which is the level of involvement that your city has in resilience international networks or initiatives?','c2q3','C2','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Are the stakeholders encouraged to share their experiences with other cities?','c2q4','C2','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Are local stakeholders involved in local networks?','c2q5','C2','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Are local stakeholders involved in national networks?','c2q6','C2','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('Are local stakeholders involved in international networks?','c2q7','C2','radio',4);
+INSERT INTO Preguntas (Pregunta, PreguntaId, Subdimension, tipoPregunta, maxPregunta) VALUES('What types of regional partnerships does the city have?','c2q8','C2','radio',4);
+
+/* Tabla Elementos */
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No involvement','c2q1','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Low involvement','c2q1','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Reactive involvement','c2q1','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Proactive involvement','c2q1','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No involvement','c2q2','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Low involvement','c2q2','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Reactive involvement','c2q2','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Proactive involvement','c2q2','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No involvement','c2q3','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Low involvement','c2q3','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Reactive involvement','c2q3','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Proactive involvement','c2q3','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No','c2q4','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Low encouragement to share their experience','c2q4','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Medium encouragement to share their experience','c2q4','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Highly encouraged: experience concerning the resilience building process as reference for other CITIES','c2q4','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No involvement ','c2q5','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Low involvement','c2q5','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Reactive involvement','c2q5','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Proactive involvement','c2q5','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No involvement ','c2q6','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Low involvement','c2q6','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Reactive involvement','c2q6','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Proactive involvement','c2q6','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('No involvement ','c2q7','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Low involvement','c2q7','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Reactive involvement','c2q7','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Proactive involvement','c2q7','radio',4 );
+
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Doesn’t have partnerships','c2q8','radio',1 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Only has informal partnerships','c2q8','radio',2 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The majority of partnerships are informal but have some formal','c2q8','radio',3 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('The majority of the partnerships are formal','c2q8','radio',4 );
+INSERT INTO Elementos (Elemento, IdPregunta, tipoPregunta, Valor) VALUES('Only has formal partnerships','c2q8','radio',5 );
+
+
+
+/* Donostia ----------------------------------- */
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1A1', 'C1', 4, 0, 'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1A2', 'C1', 4, 0, 'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1A3', 'C1', 4, 0, 'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1A5', 'C1', 3, 0, 'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1M1', 'C1', 10, 0, 'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1M2', 'C1', 3, 0, 'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1M4', 'C1', 3, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1M5', 'C1', 6, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1R1', 'C1', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1R2', 'C1', 5, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1R3', 'C1', 5, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1S1', 'C1', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1S2', 'C1', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1T1', 'C1', 5, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1T3', 'C1', 0, 0,  'Donostia');
+
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C2A1', 'C2', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C2A2', 'C2', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C2M1', 'C2', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C2R1', 'C2', 12, 0, 'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C2T1', 'C2', 12, 0, 'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C2T2', 'C2', 12, 0, 'Donostia');
+
+
+
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1A5', 'I1', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1A2', 'I1', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1A3', 'I1', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1M1', 'I1', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1M3', 'I1', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1M4', 'I1', 3, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1M5', 'I1', 3, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1M6', 'I1', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1R1', 'I1', 5, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1S1', 'I1', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1S2', 'I1', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1S4', 'I1', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1S5', 'I1', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1T1', 'I1', 3, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1T6', 'I1', 4, 0,  'Donostia');
+
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2A2', 'I2', 3, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2A3', 'I2', 0, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2A4', 'I2', 2, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2A5', 'I2', 7, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2M1', 'I2', 5, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2M2', 'I2', 0, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2M3', 'I2', 0, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2R2', 'I2', 2, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2R3', 'I2', 0, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2S2', 'I2', 5, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2S3', 'I2', 3, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2T2', 'I2', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2T4', 'I2', 0, 0,  'Donostia');
+
+
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1A1', 'L1', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1A2', 'L1', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1M1', 'L1', 3, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1M2', 'L1', 3, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1M3', 'L1', 3, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1R2', 'L1', 5, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1S1', 'L1', 2, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1S2', 'L1', 2, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1T2', 'L1', 5, 0,  'Donostia');
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L2A1', 'L2', 11, 0, 'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L2M1', 'L2', 13, 0, 'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L2R1', 'L2', 13, 0, 'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L2T1', 'L2', 10, 0, 'Donostia');
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L3A2', 'L3', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L3M1', 'L3', 3, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L3M2', 'L3', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L3R2', 'L3', 0, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L3S1', 'L3', 2, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L3T1', 'L3', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L3T2', 'L3', 5, 0,  'Donostia');
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4A1', 'L4', 3, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4A2', 'L4', 3, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4A4', 'L4', 3, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4M2', 'L4', 21, 0, 'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4M3', 'L4', 0, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4R2', 'L4', 5, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4S1', 'L4', 1, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4S2', 'L4', 10, 0, 'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4T3', 'L4', 4, 0,  'Donostia');
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1A1', 'P1', 6, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1A2', 'P1', 6, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1A3', 'P1', 6, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1M1', 'P1', 3, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1M2', 'P1', 3, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1R1', 'P1', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1S1', 'P1', 9, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1S3', 'P1', 0, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1S4', 'P1', 0, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1T1', 'P1', 4, 0,  'Donostia');
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2A1', 'P2', 5, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2A2', 'P2', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2A3', 'P2', 0, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2A5', 'P2', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2M1', 'P2', 6, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2M5', 'P2', 6, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2R2', 'P2', 3, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2R4', 'P2', 3, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2S1', 'P2', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2S4', 'P2', 2, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2S5', 'P2', 2, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2T1', 'P2', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2T4', 'P2', 5, 0,  'Donostia');
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1A1', 'U1', 0, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1A2', 'U1', 3, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1A4', 'U1', 3, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1M1', 'U1', 0, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1M2', 'U1', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1M4', 'U1', 8, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1M5', 'U1', 8, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1R1', 'U1', 3, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1R2', 'U1', 3, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1S1', 'U1', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1S3', 'U1', 7, 0,  'Donostia');
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1A1', 'E1', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1A2', 'E1', 8, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1A3', 'E1', 0, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1M2', 'E1', 0, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1M3', 'E1', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1R2', 'E1', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1R3', 'E1', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1S1', 'E1', 5, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1S3', 'E1', 3, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1A4', 'E1', 4, 0,  'Donostia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1T1', 'E1', 4, 0,  'Donostia');
+
+
+/* Sevilla ----------------------------------- */
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1A1', 'C1', 4, 0, 'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1A2', 'C1', 4, 0, 'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1A3', 'C1', 4, 0, 'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1A5', 'C1', 3, 0, 'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1M1', 'C1', 10, 0, 'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1M2', 'C1', 3, 0, 'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1M4', 'C1', 3, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1M5', 'C1', 6, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1R1', 'C1', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1R2', 'C1', 5, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1R3', 'C1', 5, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1S1', 'C1', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1S2', 'C1', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1T1', 'C1', 5, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1T3', 'C1', 0, 0,  'Sevilla');
+
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C2A1', 'C2', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C2A2', 'C2', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C2M1', 'C2', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C2R1', 'C2', 12, 0, 'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C2T1', 'C2', 12, 0, 'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C2T2', 'C2', 12, 0, 'Sevilla');
+
+
+
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1A5', 'I1', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1A2', 'I1', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1A3', 'I1', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1M1', 'I1', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1M3', 'I1', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1M4', 'I1', 3, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1M5', 'I1', 3, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1M6', 'I1', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1R1', 'I1', 5, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1S1', 'I1', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1S2', 'I1', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1S4', 'I1', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1S5', 'I1', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1T1', 'I1', 3, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1T6', 'I1', 4, 0,  'Sevilla');
+
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2A2', 'I2', 3, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2A3', 'I2', 0, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2A4', 'I2', 2, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2A5', 'I2', 7, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2M1', 'I2', 5, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2M2', 'I2', 0, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2M3', 'I2', 0, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2R2', 'I2', 2, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2R3', 'I2', 0, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2S2', 'I2', 5, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2S3', 'I2', 3, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2T2', 'I2', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2T4', 'I2', 0, 0,  'Sevilla');
+
+
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1A1', 'L1', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1A2', 'L1', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1M1', 'L1', 3, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1M2', 'L1', 3, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1M3', 'L1', 3, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1R2', 'L1', 5, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1S1', 'L1', 2, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1S2', 'L1', 2, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1T2', 'L1', 5, 0,  'Sevilla');
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L2A1', 'L2', 11, 0, 'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L2M1', 'L2', 13, 0, 'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L2R1', 'L2', 13, 0, 'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L2T1', 'L2', 10, 0, 'Sevilla');
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L3A2', 'L3', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L3M1', 'L3', 3, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L3M2', 'L3', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L3R2', 'L3', 0, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L3S1', 'L3', 2, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L3T1', 'L3', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L3T2', 'L3', 5, 0,  'Sevilla');
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4A1', 'L4', 3, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4A4', 'L4', 3, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4M2', 'L4', 21, 0, 'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4M3', 'L4', 0, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4R2', 'L4', 5, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4S1', 'L4', 1, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4S2', 'L4', 10, 0, 'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4T3', 'L4', 4, 0,  'Sevilla');
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1A1', 'P1', 6, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1A2', 'P1', 6, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1A3', 'P1', 6, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1M1', 'P1', 3, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1M2', 'P1', 3, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1R1', 'P1', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1S1', 'P1', 9, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1S3', 'P1', 0, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1S4', 'P1', 0, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1T1', 'P1', 4, 0,  'Sevilla');
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2A1', 'P2', 5, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2A2', 'P2', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2A3', 'P2', 0, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2A5', 'P2', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2M1', 'P2', 6, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2M5', 'P2', 6, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2R2', 'P2', 3, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2R4', 'P2', 3, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2S1', 'P2', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2S4', 'P2', 2, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2S5', 'P2', 2, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2T1', 'P2', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2T4', 'P2', 5, 0,  'Sevilla');
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1A1', 'U1', 0, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1A2', 'U1', 3, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1A4', 'U1', 3, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1M1', 'U1', 0, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1M2', 'U1', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1M4', 'U1', 8, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1M5', 'U1', 8, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1R1', 'U1', 3, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1R2', 'U1', 3, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1S1', 'U1', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1S3', 'U1', 7, 0,  'Sevilla');
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1A1', 'E1', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1A2', 'E1', 8, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1A3', 'E1', 0, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1M2', 'E1', 0, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1M3', 'E1', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1R2', 'E1', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1R3', 'E1', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1S1', 'E1', 5, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1S3', 'E1', 3, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1A4', 'E1', 4, 0,  'Sevilla');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1T1', 'E1', 4, 0,  'Sevilla');
+
+/* Valencia ----------------------------------- */
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1A1', 'C1', 4, 0, 'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1A2', 'C1', 4, 0, 'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1A3', 'C1', 4, 0, 'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1A5', 'C1', 3, 0, 'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1M1', 'C1', 10, 0, 'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1M2', 'C1', 3, 0, 'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1M4', 'C1', 3, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1M5', 'C1', 6, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1R1', 'C1', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1R2', 'C1', 5, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1R3', 'C1', 5, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1S1', 'C1', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1S2', 'C1', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1T1', 'C1', 5, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C1T3', 'C1', 0, 0,  'Valencia');
+
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C2A1', 'C2', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C2A2', 'C2', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C2M1', 'C2', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C2R1', 'C2', 12, 0, 'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C2T1', 'C2', 12, 0, 'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('C2T2', 'C2', 12, 0, 'Valencia');
+
+
+
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1A5', 'I1', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1A2', 'I1', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1A3', 'I1', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1M1', 'I1', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1M3', 'I1', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1M4', 'I1', 3, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1M5', 'I1', 3, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1M6', 'I1', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1R1', 'I1', 5, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1S1', 'I1', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1S2', 'I1', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1S4', 'I1', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1S5', 'I1', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1T1', 'I1', 3, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I1T6', 'I1', 4, 0,  'Valencia');
+
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2A2', 'I2', 3, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2A3', 'I2', 0, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2A4', 'I2', 2, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2A5', 'I2', 7, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2M1', 'I2', 5, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2M2', 'I2', 0, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2M3', 'I2', 0, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2R2', 'I2', 2, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2R3', 'I2', 0, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2S2', 'I2', 5, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2S3', 'I2', 3, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2T2', 'I2', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('I2T4', 'I2', 0, 0,  'Valencia');
+
+
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1A1', 'L1', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1A2', 'L1', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1M1', 'L1', 3, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1M2', 'L1', 3, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1M3', 'L1', 3, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1R2', 'L1', 5, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1S1', 'L1', 2, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1S2', 'L1', 2, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L1T2', 'L1', 5, 0,  'Valencia');
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L2A1', 'L2', 11, 0, 'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L2M1', 'L2', 13, 0, 'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L2R1', 'L2', 13, 0, 'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L2T1', 'L2', 10, 0, 'Valencia');
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L3A2', 'L3', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L3M1', 'L3', 3, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L3M2', 'L3', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L3R2', 'L3', 0, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L3S1', 'L3', 2, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L3T1', 'L3', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L3T2', 'L3', 5, 0,  'Valencia');
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4A1', 'L4', 3, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4A4', 'L4', 3, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4M2', 'L4', 21, 0, 'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4M3', 'L4', 0, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4R2', 'L4', 5, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4S1', 'L4', 1, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4S2', 'L4', 10, 0, 'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('L4T3', 'L4', 4, 0,  'Valencia');
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1A1', 'P1', 6, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1A2', 'P1', 6, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1A3', 'P1', 6, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1M1', 'P1', 3, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1M2', 'P1', 3, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1R1', 'P1', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1S1', 'P1', 9, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1S3', 'P1', 0, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1S4', 'P1', 0, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P1T1', 'P1', 4, 0,  'Valencia');
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2A1', 'P2', 5, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2A2', 'P2', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2A3', 'P2', 0, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2A5', 'P2', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2M1', 'P2', 6, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2M5', 'P2', 6, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2R2', 'P2', 3, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2R4', 'P2', 3, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2S1', 'P2', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2S4', 'P2', 2, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2S5', 'P2', 2, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2T1', 'P2', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('P2T4', 'P2', 5, 0,  'Valencia');
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1A1', 'U1', 0, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1A2', 'U1', 3, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1A4', 'U1', 3, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1M1', 'U1', 0, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1M2', 'U1', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1M4', 'U1', 8, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1M5', 'U1', 8, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1R1', 'U1', 3, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1R2', 'U1', 3, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1S1', 'U1', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('U1S3', 'U1', 7, 0,  'Valencia');
+
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1A1', 'E1', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1A2', 'E1', 8, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1A3', 'E1', 0, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1M2', 'E1', 0, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1M3', 'E1', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1R2', 'E1', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1R3', 'E1', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1S1', 'E1', 5, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1S3', 'E1', 3, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1A4', 'E1', 4, 0,  'Valencia');
+INSERT INTO Maturity_levels(NombreLevel, Subdimension, MaxPregunta, Valor, Ciudad) VALUES ('E1T1', 'E1', 4, 0,  'Valencia');
+
+
+
+/* Questions_Levels ----------------------------------- */
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('L1Q1','L1S1');
+INSERT INTO Questions_Levels (Question, Level) VALUES('L1Q1','L1M1');
+INSERT INTO Questions_Levels (Question, Level) VALUES('L1Q1','L1A1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('L1Q2','L1S2');
+INSERT INTO Questions_Levels (Question, Level) VALUES('L1Q2','L1M2');
+INSERT INTO Questions_Levels (Question, Level) VALUES('L1Q2','L1A2');
+INSERT INTO Questions_Levels (Question, Level) VALUES('L1Q2','L1R2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('L1Q3','L1M3');
+
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('L1Q4','L1T2');
+
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('L2Q1','L2M1');
+INSERT INTO Questions_Levels (Question, Level) VALUES('L2Q1','L2A1');
+INSERT INTO Questions_Levels (Question, Level) VALUES('L2Q1','L2R1');
+INSERT INTO Questions_Levels (Question, Level) VALUES('L2Q1','L2T1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('L2Q2','L2M1');
+INSERT INTO Questions_Levels (Question, Level) VALUES('L2Q2','L2A1');
+INSERT INTO Questions_Levels (Question, Level) VALUES('L2Q2','L2R1');
+INSERT INTO Questions_Levels (Question, Level) VALUES('L2Q2','L2T1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('L2Q3','L2M1');
+
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('L3Q1','L3M1');
+INSERT INTO Questions_Levels (Question, Level) VALUES('L3Q1','L3S1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('L3Q2','L3M2');
+INSERT INTO Questions_Levels (Question, Level) VALUES('L3Q2','L3A2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('L3Q3','L3T1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('L3Q4','L3A2');
+INSERT INTO Questions_Levels (Question, Level) VALUES('L3Q4','L3R2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('L3Q5','L3T2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('L4Q1','L4S2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('L4Q2','L4M2');
+INSERT INTO Questions_Levels (Question, Level) VALUES('L4Q2','L4A2');
+INSERT INTO Questions_Levels (Question, Level) VALUES('L4Q2','L4R2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('L4Q3','L4M3');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('L4Q4','L4M2');
+INSERT INTO Questions_Levels (Question, Level) VALUES('L4Q4','L4A2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('L4Q5','L4A4');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('L4Q6','L4S1');
+INSERT INTO Questions_Levels (Question, Level) VALUES('L4Q6','L4A1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('L4Q7','L4T3');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('P1Q1','P1S1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('P1Q2','P1S1');
+INSERT INTO Questions_Levels (Question, Level) VALUES('P1Q2','P1R1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('P1Q3','P1S3');
+INSERT INTO Questions_Levels (Question, Level) VALUES('P1Q3','P1A3');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('P1Q4','P1M1');
+INSERT INTO Questions_Levels (Question, Level) VALUES('P1Q4','P1A1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('P1Q5','P1A1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('P1Q6','P1M2');
+INSERT INTO Questions_Levels (Question, Level) VALUES('P1Q6','P1A2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('P1Q7','P1S4');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('P1Q8','P1T1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('P2Q1','P2S1');
+
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('P2Q2','P2M1');
+
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('P2Q3','P2A1');
+
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('P2Q4','P2S1');
+INSERT INTO Questions_Levels (Question, Level) VALUES('P2Q4','P2M1');
+
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('P2Q5','P2A2');
+
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('P2Q6','P2R2');
+
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('P2Q7','P2T1');
+
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('P2Q8','P2A3');
+
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('P2Q9','P2S4');
+INSERT INTO Questions_Levels (Question, Level) VALUES('P2Q9','P2R4');
+INSERT INTO Questions_Levels (Question, Level) VALUES('P2Q9','P2T4');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('P2Q10','P2S5');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('P2Q11','P2M5');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('P2Q12','P2A5');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('C1Q1','C1S1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('C1Q2','C1M1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('C1Q3','C1M1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('C1Q4','C1A1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('C1Q5','C1R1');
+INSERT INTO Questions_Levels (Question, Level) VALUES('C1Q5','C1T1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('C1Q6','C1S2');
+INSERT INTO Questions_Levels (Question, Level) VALUES('C1Q6','C1M2');
+INSERT INTO Questions_Levels (Question, Level) VALUES('C1Q6','C1A2');
+INSERT INTO Questions_Levels (Question, Level) VALUES('C1Q6','C1R2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('C1Q7','C1A3');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('C1Q8','C1R3');
+INSERT INTO Questions_Levels (Question, Level) VALUES('C1Q8','C1T3');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('C1Q9','C1M4');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('C1Q10','C1M5');
+INSERT INTO Questions_Levels (Question, Level) VALUES('C1Q10','C1A5');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('C2Q1','C2M1');
+INSERT INTO Questions_Levels (Question, Level) VALUES('C2Q1','C2R1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('C2Q2','C2R1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('C2Q3','C2R1');
+INSERT INTO Questions_Levels (Question, Level) VALUES('C2Q3','C2A1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('C2Q4','C2T2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('C2Q5','C2T1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('C2Q6','C2T1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('C2Q7','C2T1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('C2Q8','C2A2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I1Q1','I1S1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I1Q2','I1S4');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I1Q3','I1S5');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I1Q4','I1S2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I1Q5','I1M1');
+INSERT INTO Questions_Levels (Question, Level) VALUES('I1Q5','I1R1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I1Q6','I1M6');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I1Q7','I1A2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I1Q8','I1M4');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I1Q9','I1M5');
+INSERT INTO Questions_Levels (Question, Level) VALUES('I1Q9','I1A5');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I1Q10','I1M3');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I1Q11','I1T1');
+INSERT INTO Questions_Levels (Question, Level) VALUES('I1Q11','I1T6');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I1Q12','I1A3');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I2Q1','I2S2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I2Q2','I2M1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I2Q3','I2A3');
+INSERT INTO Questions_Levels (Question, Level) VALUES('I2Q3','I2R3');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I2Q4','I2M3');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I2Q5','I2M2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I2Q6','I2A2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I2Q7','I2M2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I2Q8','I2R2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I2Q9','I2T2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I2Q10','I2S3');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I2Q11','I2M2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I2Q12','I2A4');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I2Q13','I2A5');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('I2Q14','I2T4');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('U1Q1','U1S1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('U1Q2','U1M1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('U1Q3','U1A1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('U1Q4','U1R1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('U1Q5','U1M2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('U1Q6','U1A2');
+INSERT INTO Questions_Levels (Question, Level) VALUES('U1Q6','U1R2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('U1Q7','U1S3');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('U1Q8','U1M4');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('U1Q9','U1A4');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('U1Q10','U1M5');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('U1Q11','U1M5');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('U1Q12','U1M5');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('E1Q1','E1S1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('E1Q1','E1A1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('E1Q1','E1T1');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('E1Q2','E1M2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('E1Q3','E1A2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('E1Q4','E1R2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('E1Q5','E1R2');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('E1Q6','E1S3');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('E1Q7','E1M3');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('E1Q8','E1M3');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('E1Q9','E1A3');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('E1Q10','E1A3');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('E1Q11','E1A3');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('E1Q12','E1A4');
+
+INSERT INTO Questions_Levels (Question, Level) VALUES('E1Q13','E1R3');
